@@ -1,12 +1,48 @@
 # Lris
-🌸 Project 3: 鸢尾花数据分类与可视化 (Iris Classification and Visualization)使用 Python + scikit-learn + Plotly 交互式可视化 开发的机器学习模型探索项目。功能 Features本项目通过四个核心任务，系统地展示了机器学习模型从 2D 到 3D 的决策过程和概率分布。任务编号功能模块描述Task 0数据探索 (EDA)使用 Seaborn 分析特征分布，Plotly 绘制交互式散点图。Task 12D 边界与概率在 2D 平面（花瓣长/宽）上，对比 LogReg 和 GPC 等模型的决策边界和概率热力图。Task 23D 线性超平面在 3D 空间中，可视化 LogReg 模型对二分类问题的线性决策超平面。Task 33D 概率曲面绘制 GPC 模型的非线性概率曲面，并将其完全投影至 XOY/YOZ/ZOX 边界平面。Task 43D 决策区域渲染利用 Plotly Volume 迹线，渲染 GPC 模型对三分类问题的三维决策区域块。程序架构（Illustration 图示）本项目的架构展示了数据流从数据探索到高维模型可视化逐步递进的过程。📂 项目结构.
-├── data_preview.py             # 任务 0: 数据探索分析
-├── classifier2d_initial.py     # 任务 1: 2D 决策边界 (LogReg 基础)
-├── classifier2d.py             # 任务 1: 2D 决策边界与概率图 (多模型对比)
-├── classifier3d_boundary.py    # 任务 2: 3D 线性决策超平面
-├── classifier3d_probability.py # 任务 3: 3D 概率曲面与投影
-└── classifier3d_volume.py      # 任务 4: 3D 决策区域体积渲染
-运行方法（Run）首先，确保安装了所有必要的依赖库：Bash# 核心库：scikit-learn, numpy, pandas
-# 可视化库：matplotlib, seaborn, plotly, scikit-image
+好的，基于您提供的 **“简易图书馆资源管理系统”** README 格式特点，我为您生成一份内容丰富且结构完全对应的 **鸢尾花项目 README**。
+
+这份文档强调了项目的功能、技术栈，并提供了清晰的架构和运行方法。
+
+-----
+
+# 🌸 Project 3: 鸢尾花数据分类与可视化 (Iris Data Classification and Visualization)
+
+使用 **Python + scikit-learn + Plotly 交互式可视化** 开发的机器学习分类演示项目。
+
+-----
+
+## 功能 Features
+
+本项目通过四个核心任务，系统地展示了机器学习模型从 2D 到 3D 的决策过程和概率分布。
+
+| 功能模块 | 描述 |
+|----------|------|
+| **Task 0: 数据探索 (EDA)** | 使用 **Seaborn** 分析特征分布（箱线图），**Plotly** 绘制交互式散点图。 |
+| **Task 1: 2D 边界与概率** | 对比多种分类器，绘制 2D 决策边界和**各类别概率热力图**。 |
+| **Task 2: 3D 线性超平面** | 在 3D 特征空间中，可视化 LogReg 模型的**线性决策超平面**。 |
+| **Task 3: 3D 概率曲面** | 绘制 GPC 非线性**概率曲面**，并将其**完全投影**至 XOY/YOZ/ZOX 边界。 |
+| **Task 4: 3D 决策区域** | 利用 **Plotly Volume** 迹线，渲染 GPC 模型在 3D 空间中的**实体决策区域块**。 |
+| **技术栈核心 (附加)** | 使用 **Logistic Regression** 和 **Gaussian Process Classifier (GPC)** 进行建模。 |
+| **交互性支持 (附加)** | 所有 3D 图表均支持鼠标拖动、旋转和缩放操作。 |
+
+-----
+
+## 程序架构（Illustration 图示）
+
+本项目的架构流程展示了从低维到高维、从线性到非线性的模型可视化探索路径。
+
+-----
+
+## 运行方法（Run）
+
+首先，确保安装了所有必要的依赖库：
+
+```bash
 pip install numpy pandas scikit-learn matplotlib seaborn plotly scikit-image
-运行主程序（例如运行任务四，查看最终 3D 效果）：Bashpython classifier3d_volume.py
+```
+
+运行主程序（例如运行任务四，查看最终 3D 决策区域效果）：
+
+```bash
+python classifier3d_volume.py
+```
