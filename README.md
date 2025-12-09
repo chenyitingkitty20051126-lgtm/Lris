@@ -26,7 +26,7 @@
 
 <img src="illustration/illustration.png" width="550">
 Task0:
-<img src="result_image/classifier2d_initial.png" width="550">
+<img src="result_image/data_preview.png" width="550">
 <img src="result_image/classifier2d_initial.png" width="550">
 Task1 result:
 <img src="result_image/classifier2d.png" width="550">
@@ -36,7 +36,6 @@ Task3 result:
 <img src="result_image/classifier3d_probability.png" width="550">
 Task4 result:
 <img src="result_image/classifier3d_volume.png" width="550">
------
 
 ## 运行方法（Run）
 
