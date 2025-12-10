@@ -1,4 +1,4 @@
-# Lris
+# Lris_Data_Classification_and_Visualization
 
 # 🌸 Project 3: 鸢尾花数据分类与可视化 (Iris Data Classification and Visualization)
 
